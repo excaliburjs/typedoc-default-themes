@@ -12,8 +12,8 @@
             {{#if tags}}
                 <dl class="tsd-comment-tags">
                     {{#each tags}}
-                        <dt>{{tagName}}</dt>
-                        <dd>{{#markdown}}{{{text}}}{{/markdown}}</dd>
+                        <dt {{#ifEquals "obsolete" tagName}}class="ts-flagObsolete"{{/ifEquals}}>{{tagName}}</dt>
+                        <dd {{#ifEquals "obsolete" tagName}}class="ts-flagObsolete"{{/ifEquals}}>{{#markdown}}{{{text}}}{{/markdown}}</dd>
                     {{/each}}
                 </dl>
             {{/if}}
