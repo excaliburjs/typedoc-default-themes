@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "sourceMap": false,
+    "module": "amd",
+    "basePath": "themes",
+    "declaration": false,
+    "typeRoots": ["./node_modules/@types"]
+  }
+}
